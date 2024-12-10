@@ -1,0 +1,66 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory app:title="@string/server">
+		<EditTextPreference
+			app:key="server_host"
+			app:title="@string/server_host"
+			app:singleLine="true"
+			app:useSimpleSummaryProvider="true" />
+		<EditTextPreference
+			app:defaultValue="2345"
+			app:key="server_webrtc_port"
+			app:title="@string/webrtc_server_port"
+			app:singleLine="true"
+			android:inputType="number"
+			app:useSimpleSummaryProvider="true" />
+		<EditTextPreference
+			app:defaultValue="/"
+			app:key="server_webrtc_path"
+			app:title="@string/webrtc_server_path"
+			app:singleLine="true"
+			app:useSimpleSummaryProvider="true" />
+		<SwitchPreference
+			app:defaultValue="false"
+			app:key="server_webrtc_https"
+			app:title="@string/use_https_for_webrtc_server" />
+		<EditTextPreference
+			app:defaultValue="3012"
+			app:key="server_control_port"
+			app:title="@string/car_control_port"
+			app:singleLine="true"
+			android:inputType="number"
+			app:useSimpleSummaryProvider="true" />
+		<EditTextPreference
+			app:key="ice_server"
+			app:title="@string/ice_server"
+			app:defaultValue="stun:tun.classfun.cn:3478"
+			app:singleLine="true"
+			app:useSimpleSummaryProvider="true" />
+	</PreferenceCategory>
+	<PreferenceCategory app:title="@string/video">
+		<SwitchPreference
+			app:defaultValue="true"
+			app:key="video_hw_encoder"
+			app:title="@string/hw_encoder" />
+		<SwitchPreference
+			app:defaultValue="true"
+			app:key="video_hw_decoder"
+			app:title="@string/hw_decoder" />
+	</PreferenceCategory>
+	<PreferenceCategory app:title="Motors">
+		<EditTextPreference
+			app:defaultValue="0"
+			app:key="speed_min"
+			app:title="@string/min_motors_speed_percent"
+			app:singleLine="true"
+			android:inputType="number"
+			app:useSimpleSummaryProvider="true" />
+		<EditTextPreference
+			app:defaultValue="100"
+			app:key="speed_max"
+			app:title="@string/max_motors_speed_percent"
+			app:singleLine="true"
+			android:inputType="number"
+			app:useSimpleSummaryProvider="true" />
+	</PreferenceCategory>
+</PreferenceScreen>

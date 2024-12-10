@@ -1,0 +1,31 @@
+[versions]
+agp = "8.7.2"
+jackson = "2.17.1"
+lombokVersion = "1.18.32"
+webrtc-android = "125.6422.06.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+retrofit = "2.11.0"
+preference = "1.2.1"
+
+[libraries]
+converter-jackson = { module = "com.squareup.retrofit2:converter-jackson", version.ref = "retrofit" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+projectlombok-lombok = { module = "org.projectlombok:lombok", version.ref = "lombokVersion" }
+webrtc = { module = "io.github.webrtc-sdk:android", version.ref = "webrtc-android" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
